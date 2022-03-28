@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+  <Resource
+      name="recordBook"
+      auth="Container"
+      type="javax.sql.DataSource"
+      driverClassName="com.mysql.jdbc.Driver"
+      url="jdbc:mysql://localhost:3306/recordBook"
+      connectionProperties="autoReconnect=true;verifyServerCertificate=false;useSSL=false;requireSSL=false;useUnicode=true;characterEncoding=UTF-8;"
+      username="root"
+
+      validationQuery="select 1"/>
+  <Resource
+      name="jdbc/gcp"
+      auth="Container"
+      type="javax.sql.DataSource"
+      driverClassName="com.mysql.jdbc.Driver"
+      url="jdbc:mysql://34.146.249.181/recordbook"
+      connectionProperties="autoReconnect=true;verifyServerCertificate=false;useSSL=false;requireSSL=false;useUnicode=true;characterEncoding=UTF-8;"
+      username="root"
+      password="instance.sql123"
+      validationQuery="select 1"/>
+
+ </Context>
